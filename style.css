@@ -94,7 +94,6 @@ select {
     width: 1170px;
     height: 70px;
     margin: 0 auto;
-    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,7 +101,6 @@ select {
 }
 .header__logo{
     width: 390px;
-    padding: 0 15px;
 }
 .header__contacts{
     width: 600px;
@@ -133,6 +131,13 @@ select {
     color: black;
     cursor: pointer;
 }
+
+
+
+
+
+
+
 .main{
     width: 100%;
 }
@@ -151,16 +156,22 @@ select {
     display: flex;
     align-items: center;
 }
-.main-nav ul{
+.main-nav__ul{
     display: flex;
     list-style: none;
     height: 54px;
     margin: 0;
+    padding: 0 15px;
+    backface-visibility: hidden;
 }
-.main-nav__active{
+#main-nav__active{
   border-top: 4px tomato solid;
   color: black;
 }
+.main-nav__ul li{
+  position: relative;
+}
+
 .main-nav a{
   display: flex;
   align-items: center;
@@ -183,4 +194,27 @@ select {
 #main-nav__contacts{
   padding: 0;
   border-top: none;
+}
+
+.submenu{
+  background: rgb(226, 224, 224);
+  border: 1px #e1e1e1 solid;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  width: 150px;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0% 0%;
+}
+.main-nav__ul > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+	transform: perspective(600px) rotateX(0deg);
+}
+.submenu a{
+  border: none;
+  text-transform:initial;
+  padding: 7px 2px;
 }

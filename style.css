@@ -295,7 +295,7 @@ select {
   flex-direction: column;
   align-items: center;
 }
-.carousel h2{
+.carousel h2, .benefits-container h2{
   font-family: Poppins;
 font-style: normal;
 font-weight: 900;
@@ -347,4 +347,65 @@ font-size: 18px;
 line-height: 30px;
 color: white;
 letter-spacing: 0.8px;
+}
+
+.benefits{
+  width: 100%;
+  height: 857px;
+  display: flex;
+  justify-content: center;
+}
+.benefits-container{
+  height: 724px;
+  width: 1691px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.benefits-container h2{
+  text-align: center;
+}
+.benefits-cards{
+  width: 100%;
+  height: 531px;
+}
+.benefits-cards ul{
+  width: 100%;
+  height: 100%;
+}
+.benefits-cards li{
+  width: 471px;
+  height: 466.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.benefits-cards__text{
+  width: 100%;
+  height: 163px;
+  display: flex;
+  flex-direction: column;
+}
+.benefits-cards__text h3{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 36px;
+  text-align: center;
+  color: #F19439;
+  text-align: center;
+}
+.benefits-cards__text p{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #382933;
+  margin-top: 16px;
 }

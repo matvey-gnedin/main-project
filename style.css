@@ -370,10 +370,15 @@ letter-spacing: 0.8px;
 .benefits-cards{
   width: 100%;
   height: 531px;
+  
 }
 .benefits-cards ul{
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  align-items: flex-start;
 }
 .benefits-cards li{
   width: 471px;
@@ -392,7 +397,7 @@ letter-spacing: 0.8px;
 .benefits-cards__text h3{
   font-family: Poppins;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 25px;
   line-height: 36px;
   text-align: center;
@@ -402,10 +407,14 @@ letter-spacing: 0.8px;
 .benefits-cards__text p{
   font-family: Poppins;
   font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
+  font-weight: 800;
+  font-size: 19px;
   line-height: 25px;
   text-align: center;
   color: #382933;
   margin-top: 16px;
+}
+
+#card_2{
+  margin-top: 64px;
 }

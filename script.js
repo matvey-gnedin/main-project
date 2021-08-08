@@ -1,7 +1,7 @@
-const time = 5000;
-const step = 20;
+const time = 4000;
+const step = 30;
 
-let arr = document.querySelectorAll('.guarantees-container');
+let arr = document.querySelectorAll('.timer-container__counter');
 
 for (let i = 0; i < arr.length; i++){
     let k = arr[i].innerHTML

@@ -10,6 +10,9 @@ ul[class],
 ol[class] {
   padding: 0;
 }
+ul{
+  padding: 0;
+}
 
 /* Убираем внешние отступы */
 body,
@@ -216,7 +219,7 @@ select {
 }
 .main-nav__ul > li:hover .submenu {
   visibility: visible;
-  opacity: 1;
+  opacity: 0.7;
 	transform: perspective(600px) rotateX(0deg);
 }
 .submenu a{
@@ -224,16 +227,17 @@ select {
   text-transform:initial;
   padding: 7px 2px;
 }
+/* video*/
 .intro{
   width: 100%;
-  height: 548px;
+  height: 1240px;
   overflow: hidden;
   position: relative;
 }
 .mask{
   display: block;
   width: 100%;
-  height: 100%;
+  height: 842px;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
@@ -241,7 +245,7 @@ select {
   z-index: 2;
 }
 .video{
-  height: 100%;
+  height: 842px;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -255,19 +259,79 @@ select {
 }
 .intro-content{
   width: 100%;
-  height: 100%;
+  height: 842px;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 3;
 }
 .intro-content__container{
-  margin: auto;
+  margin-left: calc(50% - 900px);
   margin-top: 200px;
   width: 600px;
   height: 100px;
   color: white;
 }
+.timer{
+  position: absolute;
+  width: 1400px;
+  height: 474px;
+  background-color: white;
+  z-index: 4;
+  bottom: 85px;
+  left: calc(50% - 700px);
+  border: 1px black solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timer-container{
+  width: 1032px;
+  height: 311px;
+  display: grid;
+  grid-template-areas: "t1 t2"
+                       "t3 t4";
+  grid-template-columns: 366px 366px;
+  grid-template-rows: 104px 104px;
+  row-gap: 103px;
+  column-gap: 300px;
+}
+.timer-container__div{
+  display: flex;
+  align-items: center;
+}
+.timer-container img{
+  width: 104px;
+  height: 104px;
+}
+.timer-container__text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 40px;
+  margin-left: 17px;
+}
+.timer-container__counter{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  color: #C26912;
+}
+.timer-container h6{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+  color: #382933;
+  margin: 0;
+}
+
+
+/* timer */
 .guarantees{
   display: flex;
   align-items: center;
@@ -377,7 +441,6 @@ letter-spacing: 0.8px;
   height: 100%;
   display: flex;
   justify-content: space-between;
-  padding-left: 0;
   align-items: flex-start;
 }
 .benefits-cards li{

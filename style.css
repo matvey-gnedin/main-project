@@ -480,6 +480,34 @@ letter-spacing: 0.8px;
 }
 
 
+/* clients */
+
+.clients{
+  width: 1280px;
+  height: 966px;
+  margin: auto;
+  margin-top: 174px;
+  margin-bottom: 150px;
+}
+
+.clients ul{
+  margin: 0;
+  display: grid;
+  grid-template-areas: "client1 client2 client3"
+                       "client4 client5 client6";
+  grid-template-columns: 420px 420px 420px;
+  grid-template-rows: 394px 394px;
+  row-gap: 178px;
+  column-gap: 10px;
+}
+
+.clients li{
+  list-style: none;
+  border: 5px solid #F19439;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* footer */
 
